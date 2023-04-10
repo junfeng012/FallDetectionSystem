@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Register</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="rBody">
+    <form action="Register" method="post">
+        <div class="rRectangle">
+            <h1 id="rTitle">Register</h1>
+
+            <div>
+                <label id="rFNameLabel" for="fullName">Username:</label>
+                <br>
+                <input id="rFName" name="fullName" type="text" value="<%= locals.RegisterArray[0] %>"/>
+            </div>
+
+            <div style="margin-top:15px;">
+                <label id="rContactNumberLabel" for="contactNumber">Contact Number:</label>
+                <br>
+                <input id="rContactNumber"name="contactNumber" type="text" value="<%= RegisterArray[1] %>"/>
+            </div>
+
+            <div style="margin-top:15px;">
+                <label id="rEmailLabel" for="email">Email:</label>
+                <br>
+                <input id="rEmail" name="email" type="text" value="<%= RegisterArray[2] %>"/>
+            </div>
+
+            <div style="margin-top:15px;">
+                <label id="rPasswordLabel" for="password">Password:</label>
+                <br>
+                <input id="rPassword" name="password" type="password" value=""/>
+            </div>
+
+            <div style="margin-top:15px;">
+                <label id="rCfmPasswordLabel" for="confirmPassword">Confirm Password:</label>
+                <br>
+                <input id="rCfmPassword" name="confirmPassword" type="password" value=""/>
+            </div>
+
+            <div style="margin-top: 30px;">
+                <button id="rBtnSubmit" type="submit">SUBMIT</button>
+            </div>
+
+            <div id="haveAcc">
+                Already have an account? <a href="/Welcome">Login</a>
+            </div>
+        </div>
+        
+        <!--
+        <h1>Register</h1>
+
+        <div>
+            <label for="fullName">Full Name:</label>
+            <br>
+            <input id="fullName" name="fullName" type="text" value="<%= locals.RegisterArray[0] %>"/>
+        </div>
+
+        <div style="margin-top:15px;">
+            <label for="contactNumber">Contact Number:</label>
+            <br>
+            <input id="contactNumber" name="contactNumber" type="text" value="<%= RegisterArray[1] %>" />
+        </div>
+
+        <div style="margin-top:15px;">
+            <label for="email">Email:</label>
+            <br>
+            <input id="email" name="email" type="text" value="<%= RegisterArray[2] %>" />
+        </div>
+
+        <div style="margin-top:15px;">
+            <label for="password">Password:</label>
+            <br>
+            <input id="password" name="password" type="text" value="<%= RegisterArray[3] %>" />
+        </div>
+
+        <div style="margin-top:15px;">
+            <label for="confirmPassword">Confirm Password:</label>
+            <br>
+            <input id="confirmPassword" name="confirmPassword" type="text" value="<%= RegisterArray[4] %>" />
+        </div>
+
+        <div style="margin-top: 30px;">
+            <button id="btnSubmit" type="submit">SUBMIT</button>
+        </div>
+
+        <div style="margin-top:30px;">
+            Already have an account? <a href="/Welcome">Login</a>
+        </div>
+        -->
+    </form>
+    
+    <!-- <script src="../JavaScript/Register.js"></script> -->
+
+</body>
+
+</html>

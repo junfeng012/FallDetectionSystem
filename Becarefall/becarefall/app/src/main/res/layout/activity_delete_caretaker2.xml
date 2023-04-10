@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DeleteCaretaker2">
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="260dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="40dp"
+        android:text="Last Confirmation"
+        android:textAlignment="center"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/dc2_Delete_Text"
+        android:layout_width="280dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="164dp"
+        android:text="Confirm to delete Caretaker?"
+        android:textAlignment="center"
+        android:textSize="35sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
+    <Button
+        android:id="@+id/dc2_Cancel_Button"
+        android:layout_width="135dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="80dp"
+        android:text="Cancel"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/dc2_Delete_Button"
+        app:layout_constraintTop_toBottomOf="@+id/dc2_Delete_Text" />
+
+    <Button
+        android:id="@+id/dc2_Delete_Button"
+        android:layout_width="135dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="80dp"
+        android:text="Delete"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dc2_Delete_Text" />
+
+    <ImageButton
+        android:id="@+id/dc2_HomeButton_Image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:background="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/ezgif_4_e2bfd897df" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".Login">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="260dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="40dp"
+        android:text="Log In"
+        android:textColor="#333333"
+        android:textAlignment="center"
+        android:textSize="60sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/eupassword_OldPassword_Box"
+        android:layout_width="300dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="60dp"
+        android:background="#bbddff"
+        android:ems="10"
+        android:hint="Username"
+        android:inputType="text"
+        android:outlineProvider="none"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="30sp" />
+
+    <EditText
+        android:id="@+id/eupassword_OldPassword_Box3"
+        android:layout_width="11dp"
+        android:layout_height="3dp"
+        android:layout_marginTop="40dp"
+        android:background="#bbddff"
+        android:ems="10"
+        android:hint="Username"
+        android:inputType="text"
+        android:outlineProvider="none"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:visibility="invisible" />
+
+    <EditText
+        android:id="@+id/l_Password_Box"
+        android:layout_width="300dp"
+        android:layout_height="65dp"
+        android:background="#bbddff"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="text"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/l_error_text"
+        android:layout_width="300dp"
+        android:layout_height="75dp"
+        android:gravity="center"
+        android:text="The username or password is incorrect."
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/l_Login_Button"
+        android:layout_width="150dp"
+        android:layout_height="65dp"
+        android:text="Log In"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@+id/l_Password_Box" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:gravity="center"
+        android:layout_marginTop="40dp"
+        android:text="Want to create an Account?"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/l_Login_Text"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:gravity="center"
+        android:text="Sign Up"
+        android:textColor="#4455bb"
+        android:textSize="30sp" />
+
+</LinearLayout>

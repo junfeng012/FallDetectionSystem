@@ -1,0 +1,583 @@
+@import url('https://fonts.googleapis.com/css?family=Fredoka+One&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Fredoka&display=swap');
+
+/* Welcome */
+.wBody, .rBody, .csBody, .csaBody, .lBody {
+    background-color: #0077B6
+}
+
+.wRectangle {
+    height: 600px;
+    width: 500px;
+    background-color: #CAF0F8;
+    margin: 180px 500px 180px 700px;
+    padding: 100px;
+    border-radius: 10px;
+}
+
+#wTitle, #rTitle {
+    text-align: center;
+    margin-top: 0px;
+    font-size: 40px;
+}
+
+#wBtnLogin, #rBtnSubmit {
+    display: block;
+    margin: 1em auto;
+    height: 3em;
+    font-family: "Fredoka One", sans-serif;
+    font-size: 20px;
+    background-color: #03045E;
+    color: white;
+    min-width: 200px;
+    border-radius: 15px;
+}
+
+#rBtnSubmit {
+    margin-bottom: 10px;
+}
+
+#wBtnLogin:hover, #rBtnSubmit:hover {
+    cursor: pointer;
+}
+
+#wIdLabel, #wPasswordLabel, #rFNameLabel, #rContactNumberLabel,
+#rEmailLabel, #rPasswordLabel, #rCfmPasswordLabel {
+    font-family: "Fredoka", sans-serif;
+    font-size: 25px;
+}
+
+#wId, #wPassword, #rFName, #rContactNumber, #rEmail,
+#rPassword, #rCfmPassword {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+#wCreate{
+    font-size: 17px;
+    padding-left: 10px;
+}
+
+.wInline {
+    display: inline-block;  
+    font-family: "Fredoka", sans-serif;
+}
+
+#wRegister {
+    color: #0F07ED;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+/* Register */
+.rRectangle {
+    height: 800px;
+    width: 500px;
+    background-color: #CAF0F8;
+    margin: 90px 500px 90px 700px;
+    padding: 50px 100px;
+    border-radius: 10px;
+}
+
+#haveAcc {
+    padding-left: 30px;
+    font-family: "Fredoka", sans-serif;
+}
+
+/* Create Success and Changes Saved */
+.csRectangle, .csaRectangle, .lRectangle {
+    position: fixed;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#csAccCreated, #csaInfoSaved {
+    font-size: 50px;
+}
+
+#csToHome, #csaToHome {
+    font-size: 35px;
+    color: white;
+    font-family: "Fredoka", sans-serif;
+}
+
+#csToHome {
+    padding-left: 240px;
+}
+
+#csaToHome {
+    padding-left: 260px;
+}
+
+/* Menu Bar */
+header {
+    width: 100%;
+    height: 50px;
+    background-color: #0077B6;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+#logo, #dashMenu {
+    width: 40px;
+    padding: 0.4rem;
+    margin-left: 10px;
+    margin-top: 2px;
+}
+
+nav {
+    width: 25%; 
+    height: 50px;
+}
+  
+nav > ul {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-inline-start: 0;
+    margin-block: 0;
+    height: 100%;
+}
+  
+nav > ul > li {
+    color: #dfdfe2;
+    font-family: "Fredoka", sans-serif;
+    font-size: 20px;
+    margin: 0 0.2rem;
+    padding: 0.2rem;
+    display: block;
+}
+  
+nav > ul > li:hover {
+    background-color: #dfdfe2;
+    color: #1b1b32;
+    cursor: pointer;
+}
+  
+li > a {
+    color: inherit;
+    text-decoration: none;
+}
+  
+/* Headings and Paragraph */
+h1 {
+    font-family: "Fredoka One", sans-serif;
+}
+
+h2 {
+    text-align: left;
+    font-family: "Fredoka", sans-serif;  
+    font-size: 30px;
+    padding-top: 2%;
+}
+
+p {
+    font-family: "Fredoka", sans-serif;  
+}
+
+/* Home */
+.description {
+    padding: 0px 400px;
+}
+
+#description {
+    margin: 1em 1em 1.5em 1em;
+    text-align: center;
+    font-size: 30px;
+}
+
+#becarefall {
+    margin: 1em 1em 0.5em 1em;
+    text-align: center;
+    font-size: 50px;
+    padding-top: 12%;
+}
+
+#btnSubmit {
+    display: block;
+    /* width: 60%; */
+    margin: 1em auto;
+    height: 5em;
+    font-family: "Fredoka One", sans-serif;
+    font-size: 25px;
+    background-color: #03045E;
+    color: white;
+    min-width: 300px;
+    border-radius: 15px;
+}
+
+#btnSubmit:hover {
+    cursor: pointer;
+}
+
+/* Linked User */
+.rectangle {
+    display: flex;
+    height: 500px;
+    width: 1000px;
+    background-color: #00B4D8;
+    margin: 180px 500px 180px 500px;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.inline { 
+    display: inline-block;  
+    margin:10px;
+}
+
+.luLeft {
+    padding: 70px 20px 0px 80px;
+}
+
+#user {
+    width: 300px;
+    /* margin: 60px 30px 0px 100px; */
+}
+
+#contactNumber {
+    padding-left: 45px;
+    margin: 20px 0px 0px 0px;
+    font-size: 40px;
+}
+
+#name {
+    font-size: 40px;
+    margin-top: 60px;
+}
+
+#userInfo {
+    font-size: 30px;
+}
+
+/*Data History*/
+* {
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box; /* Firefox, other Gecko */
+	box-sizing: border-box; /* Opera/IE 8+ */
+}
+
+table {
+	background: #fff;
+    border-collapse: collapse;
+}
+
+table,
+thead,
+tbody,
+tfoot,
+tr,
+td,
+th {
+	margin: auto;
+	padding: 1rem;
+}
+
+table, td {
+    border: 1px solid #dedede;
+}
+
+th {
+    text-align: left;
+    font-family: "Fredoka One", sans-serif;
+    font-size: 25px;
+    height: 80px;
+    background-color: #D3D3D3;
+}
+
+td {
+    font-family: "Fredoka", sans-serif;
+    height: 60px;
+}
+
+.aa_htmlTable {
+	padding: 5rem;
+	width: 100%;
+	height: 70vh;
+}
+
+#dhName, #dhDate, #dhTime {
+    width: 20%;
+}
+
+#dhStatus {
+    width: 30%;
+}
+
+#dhUserName {
+    font-weight: bold;
+}
+
+/* User Profile */
+.upRectangle {
+    display: flex;
+    width: 1000px;
+    top: 40px;
+    position: absolute;
+    margin-left: 200px;
+}
+
+.left {
+    padding-left: 80px;
+    padding-top: 100px;
+}
+
+.right {
+    padding-left: 50px;
+    height: 200px;
+}
+
+#upUser {
+    width: 200px;
+}
+
+#upBtnSubmit {
+    display: block;
+    margin: 1em auto;
+    height: 3em;
+    font-family: "Fredoka One", sans-serif;
+    font-size: 20px;
+    background-color: #03045E;
+    color: white;
+    min-width: 200px;
+    border-radius: 15px;
+}
+
+#upName {
+    margin: 0px;
+    font-size: 50px;
+}
+
+#upCaretakerId, #upPersonalInfo, #upUserInfo {
+    font-size: 35px;
+    font-weight: bold;
+}
+
+#upCaretakerId, #upUserInfo {
+    color: #585555;
+}
+
+#upCaretakerId {
+    margin: 0px;
+    margin-bottom: 30px;
+    margin-top: 5px;
+}
+
+#upPersonalInfo {
+    margin: 0px;
+}
+
+#upUserInfo {
+    padding-bottom: 20px;
+}
+
+.caretaker {
+    top: 130px;
+    position: absolute;
+}
+
+.information {
+    top: 340px;
+    position: absolute;
+    width: 1000px;
+}
+
+hr {
+    height: 5px;
+    background: black;
+}
+
+/* Edit Profile */
+.epInformation {
+    top: 110px;
+    position: absolute;
+    width: 1000px;
+}
+
+#epUserInfo {
+    font-family: "Fredoka", sans-serif;
+    font-size: 28px;
+    font-weight: bold;
+    color: #585555;
+    margin-left: 0px;
+}
+
+.epInline, .epInline2 { 
+    display: inline-block;  
+}
+
+.epLeft, .epLeft2, .epRight, .epRight2 {
+    width: 500px;
+}
+
+.epRight {
+    top: 63px;
+    position: absolute;
+}
+
+.epRight2 {
+    top: 63px;
+    position: absolute;
+}
+
+input {
+    margin-bottom: 20px;
+    padding: 7px 20px;
+    width: 80%;
+    margin-top: 5px;
+    font-family: "Inter", sans-serif;
+    font-size: 20px;
+}
+
+#epAddress, #epEmail {
+    width: 90%;
+}
+
+.epPassword {
+    top: 620px;
+    position: absolute;
+    width: 1000px;
+}
+
+#epPasswordButton {
+    display: block;
+    margin: 1em auto;
+    height: 3em;
+    font-family: "Fredoka One", sans-serif;
+    font-size: 20px;
+    background-color: #03045E;
+    color: white;
+    min-width: 200px;
+    border-radius: 15px;
+}
+
+/* Dashboard */
+.dashBody{
+    background-color: black;
+}
+
+.dashRectangle {
+    height: 600px;
+    width: 80%;
+    padding: 0px;
+    display: flex;
+    gap: 20px;
+    position: fixed;
+    top: 60%;
+    left: 58%;
+    transform: translate(-50%, -50%);
+}
+
+.dashInline {
+    display: inline-block; 
+}
+
+#sensor_Image {
+    width: 200px;
+}
+
+#user_Image {
+    width: 100px;
+    margin-left: 50px;
+}
+
+.sensor {
+    width: 300px;
+    height: 500px;
+    padding: 80px 50px;
+}
+
+.linkedUser {
+    width: 300px;
+    height: 500px;
+    padding: 90px 50px;
+}
+
+.accelerometer {
+    width: 600px;
+    height: 500px;
+    padding: 90px 40px 80px 40px;
+}
+
+.sensor, .linkedUser, .accelerometer {
+    background-color: #343842;
+}
+
+#sensor_Text, #sensorStatus_Text, #user_Text, #dashboard_Text {
+    margin-top: 0px;
+    text-align: center;
+    color: white;
+}
+
+#sensor_Text,  #user_Text, #dashboard_Text {
+    font-size: 27px;
+    font-weight: 300;
+    margin-top: 10px;
+}
+
+#sensorStatus_Text {
+    font-size: 20px;
+}
+
+#userName_Text, #userPhone_Text {
+    text-align: center;
+    color: black;
+}
+
+#userName_Text {
+    font-weight: 300;
+    font-size: 20px;
+    margin: 10px 0px;
+}
+
+#userPhone_Text {
+    font-weight: 100;
+    font-size: 20px;
+    margin-top: 0px;
+}
+
+#requestFallStatus_Button {
+    display: block;
+    margin: 1em auto;
+    height: 3em;
+    font-family: "Fredoka", sans-serif;
+    font-size: 18px;
+    background-color: #0F5C5C;
+    color: white;
+    min-width: 150px;
+}
+
+#requestFallStatus_Button:hover {
+    cursor: pointer;
+}
+
+#dashHeader {
+    width: 100%;
+    height: 50px;
+    background-color: #0F5C5C;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+#dashHome_Text {
+    text-align: left;
+    color: white;
+    font-size: 20px;
+}
+
+/* Logout */
+#redirect {
+    padding-left: 240px;
+    font-family: "Fredoka", sans-serif;
+    font-size: 25px;
+}

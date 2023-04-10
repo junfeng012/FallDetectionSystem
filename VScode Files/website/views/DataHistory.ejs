@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Data History</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <a href="Home">
+            <img id="logo" src="https://media.discordapp.net/attachments/911545876860764180/1065562528970719242/icons8-home-page-96_1.png"></img>
+        </a>
+        <nav>
+            <ul>
+                <li><a href="LinkedUser">Linked User</a></li>
+                <li><a href="DataHistory">Data History</a></li>
+                <li><a href="UserProfile">Profile</a></li>
+                <li><a href="Logout">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <h2>Below displays your data history from most recent to older data.</h2>
+
+    <div class="aa_htmlTable">
+        
+        <table>
+          <thead>
+            <tr>
+              <th id="dhName">Name</th>
+              <th id="dhDate">Date</th>
+              <th id="dhTime">Time</th>
+              <th id="dhStatus">EmergencyCall</th>
+            </tr>
+          </thead>
+          <tbody>
+            <% for (let i = 0; i < locals.DataHistoryArray.length; i++ ) { %>
+                <tr>
+                    <td id="dhUserName"><%= locals.DataHistoryArray[i].name %></td>
+                    <td><%= locals.DataHistoryArray[i].date %></td>
+                    <td><%= locals.DataHistoryArray[i].time %></td>
+                    <td><%= locals.DataHistoryArray[i].emergencycall %></td>
+                </tr>
+            <% }; %>
+          </tbody>
+
+        </table>
+    </div>
+
+    <!-- 
+    <div style="margin-top:30px;">
+        <table border="1px">
+            <tr>
+                <th>Name</th>
+                <th>Date</th>
+                <th>Time</th>
+                <th>Emergency Call</th>
+            </tr>
+            
+            <% for (let i = 0; i < locals.DataHistoryArray.length; i++ ) { %>
+                <tr>
+                    <td value="<%= locals.DataHistoryArray[i].name %>"><%= locals.DataHistoryArray[i].name %></td>
+                    <td value="<%= locals.DataHistoryArray[i].date %>"><%= locals.DataHistoryArray[i].date %></td>
+                    <td value="<%= locals.DataHistoryArray[i].time %>"><%= locals.DataHistoryArray[i].time %></td>
+                    <td value="<%= locals.DataHistoryArray[i].emergencycall %>"><%= locals.DataHistoryArray[i].emergencycall %></td>
+                </tr>
+            <% }; %>
+            
+        </table>
+    </div>
+    -->
+</body>
+
+</html>

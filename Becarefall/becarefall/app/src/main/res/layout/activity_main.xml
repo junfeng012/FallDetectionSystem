@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:gravity="center_horizontal">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="260dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="40dp"
+        android:text="Sign Up"
+        android:textColor="#333333"
+        android:textAlignment="center"
+        android:textSize="60sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/su_Username_Box"
+        android:layout_width="300dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="60dp"
+        android:background="#bbddff"
+        android:ems="10"
+        android:hint="Username"
+        android:inputType="text"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="30sp" />
+
+    <EditText
+        android:id="@+id/su_Username_Box2"
+        android:layout_width="0dp"
+        android:layout_height="2dp"
+        android:layout_marginTop="40dp"
+        android:background="#bbddff"
+        android:ems="10"
+        android:hint="Username"
+        android:inputType="text"
+        android:textColor="@color/black"
+        android:visibility="invisible" />
+
+    <EditText
+        android:id="@+id/su_Password_Box"
+        android:layout_width="300dp"
+        android:layout_height="65dp"
+        android:background="#bbddff"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="text"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/su_error_text"
+        android:layout_width="300dp"
+        android:layout_height="75dp"
+        android:gravity="center"
+        android:text="The username has been taken."
+        android:textColor="#FF0000"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/su_SignUp_Button"
+        android:layout_width="150dp"
+        android:layout_height="65dp"
+        android:text="Sign Up"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@+id/su_Password_Box" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:gravity="center"
+        android:layout_marginTop="40dp"
+        android:text="Already have an Account?"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/su_Login_Text"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:gravity="center"
+        android:text="Login"
+        android:textColor="#4455bb"
+        android:textSize="30sp" />
+
+
+</LinearLayout>

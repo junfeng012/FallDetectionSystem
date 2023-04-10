@@ -1,0 +1,5 @@
+adb devices -l
+adb tcpip 5555
+adb connect (phone's ip address)
+
+open  scrcpy.exe in C:\Users\Sosi\AppData\Local\Android\Sdk\platform-tools-scrcpy

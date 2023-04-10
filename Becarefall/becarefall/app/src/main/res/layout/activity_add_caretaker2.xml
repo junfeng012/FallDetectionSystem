@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddCaretaker2">
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="320dp"
+        android:layout_height="280dp"
+        android:layout_marginTop="30dp"
+        android:background="#99eeff"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="260dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="30dp"
+        android:text="Caretaker Information"
+        android:textAlignment="center"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/up_HomeButton_Image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:background="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/ezgif_4_e2bfd897df" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="10dp"
+        android:text="Caretaker ID:"
+        android:textSize="15dp"
+        app:layout_constraintStart_toStartOf="@+id/textView15"
+        app:layout_constraintTop_toTopOf="@+id/textView15" />
+
+    <TextView
+        android:id="@+id/ac2_CaretakerID_Text"
+        android:layout_width="268dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="12dp"
+        android:background="#bbddff"
+        android:ems="10"
+        android:text="InsertID"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="@+id/textView14"
+        app:layout_constraintTop_toBottomOf="@+id/textView14" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Caretaker Name:"
+        android:textSize="15dp"
+        app:layout_constraintStart_toStartOf="@+id/ac2_CaretakerID_Text"
+        app:layout_constraintTop_toBottomOf="@+id/ac2_CaretakerID_Text" />
+
+    <EditText
+        android:id="@+id/ac2_Name_Text"
+        android:layout_width="268dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="12dp"
+        android:background="#bbddff"
+        android:ems="10"
+        android:inputType="text"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="@+id/textView17"
+        app:layout_constraintTop_toBottomOf="@+id/textView17" />
+
+    <EditText
+        android:id="@+id/ac2_Phone_Text"
+        android:layout_width="268dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="12dp"
+        android:background="#bbddff"
+        android:ems="10"
+        android:inputType="text"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="@+id/textView19"
+        app:layout_constraintTop_toBottomOf="@+id/textView19" />
+
+    <EditText
+        android:id="@+id/ac2_EmailAddress_Text"
+        android:layout_width="268dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="12dp"
+        android:background="#bbddff"
+        android:ems="10"
+        android:inputType="text"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="@+id/textView21"
+        app:layout_constraintTop_toBottomOf="@+id/textView21" />
+
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Caretaker Email Address:"
+        android:textSize="15dp"
+        app:layout_constraintStart_toStartOf="@+id/ac2_Phone_Text"
+        app:layout_constraintTop_toBottomOf="@+id/ac2_Phone_Text" />
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Caretaker Phone Number:"
+        android:textSize="15dp"
+        app:layout_constraintStart_toStartOf="@+id/ac2_Name_Text"
+        app:layout_constraintTop_toBottomOf="@+id/ac2_Name_Text" />
+
+    <Button
+        android:id="@+id/ac2_Add_Button"
+        android:layout_width="135dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:textSize="20sp"
+        android:text="Add"
+        app:layout_constraintStart_toStartOf="@+id/textView15"
+        app:layout_constraintTop_toBottomOf="@+id/textView15" />
+
+    <Button
+        android:id="@+id/ac2_Cancel_Button"
+        android:layout_width="135dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:textSize="20sp"
+        android:text="Cancel"
+        app:layout_constraintEnd_toEndOf="@+id/textView15"
+        app:layout_constraintTop_toBottomOf="@+id/textView15" />
+</androidx.constraintlayout.widget.ConstraintLayout>

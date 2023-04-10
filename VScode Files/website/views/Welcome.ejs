@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Welcome</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="wBody">
+    <form action="/Welcome" method="post">
+        <div class="wRectangle">
+            <h1 id="wTitle">Welcome</h1>
+
+            <div>
+                <label id="wIdLabel">Username:</label>
+                <br>
+                <input id="wId" name="id" type="text" value="<%= WelcomeArray[0] %>"/>
+            </div>
+
+            <div style="margin-top:15px;">
+                <label id="wPasswordLabel">Password:</label>
+                <br>
+                <input id="wPassword"  name="password" type="password"/>
+            </div>
+
+            <div>
+                <button id="wBtnLogin" type="submit">LOGIN</button>
+            </div>
+
+            <div class="wInline">
+                <div class="wLeft">
+                    <p id="wCreate">Create a new account?</p> 
+                </div>
+            </div>
+
+            <div class="wInline">
+                <div class="wRight">
+                    <a id="wRegister" href="Register">Register Now</a>
+                </div>
+            </div>
+        </div>
+        
+        <!--
+        <div>
+            <label>ID:</label>
+            <br>
+            <input id="id" name="id" type="text" value="<%= WelcomeArray[0] %>"/>
+        </div>
+
+        <div style="margin-top:15px;">
+            <label>Password:</label>
+            <br>
+            <input id="password" name="password" type="text" value="<%= WelcomeArray[1] %>"/>
+        </div>
+
+        <div style="margin-top: 30px;">
+            <button id="btnLogin" type="submit">LOGIN</button>
+        </div>
+
+        <div style="margin-top:30px;">
+            Create a new account? <a href="Register">Register Now</a>
+        </div>
+        -->
+    </form>
+</body>
+
+</html>

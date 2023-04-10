@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>User Profile</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <a href="Home">
+            <img id="logo" src="https://media.discordapp.net/attachments/911545876860764180/1065562528970719242/icons8-home-page-96_1.png"></img>
+        </a>
+        <nav>
+            <ul>
+                <li><a href="LinkedUser">Linked User</a></li>
+                <li><a href="DataHistory">Data History</a></li>
+                <li><a href="UserProfile">Profile</a></li>
+                <li><a href="Logout">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+    <form method="post">
+        <div class="upRectangle">
+            <div class="inline">
+                <div class="left">
+                    <img id="upUser" src="https://media.discordapp.net/attachments/909647629632299042/1069514203485962260/1564535_customer_user_userphoto_account_person_icon.png?width=454&height=454"></img>
+                    <button id="upBtnSubmit" type="submit">Edit Profile</button>
+                </div>
+            </div>
+        </form>
+
+        <div class="inline">
+            <div class="right">
+                <div class="caretaker">
+                    <h1 id="upName"><%= CaretakerProfileArray[1] %></h1>
+                    <p id="upCaretakerId" ><%= CaretakerProfileArray[0] %></p>
+                </div>
+                <div class="information">
+                    <p id="upPersonalInfo">Personal Information</p>
+                    <hr>
+                    <p id="upUserInfo"><%= CaretakerProfileArray[2] %></p>
+                    <p id="upUserInfo"><%= CaretakerProfileArray[3] %></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--
+    <div style="margin-top:30px;">
+        <img src="img_girl.jpg" alt="Profile Picture" width="500" height="600">
+        <br>
+        <form method = "post">
+            <button id="btnSubmit" type="submit">Edit Profile</button>
+        </form>
+        <h1><%= CaretakerProfileArray[1] %></h1>
+        <label for="caretakerId">Caretaker ID: </label>
+        <input id="caretakerId" type="text" readonly /><%= CaretakerProfileArray[0] %>
+        <h2>Personal Information</h2>
+        <label for="contactNumber">Contact Number: </label>
+        <input id="contactNumber" type="text" readonly /><%= CaretakerProfileArray[2] %>
+        <label for="email">Email: </label>
+        <input id="email" type="text" readonly /><%= CaretakerProfileArray[3] %>
+    </div>
+    -->
+</body>
+
+</html>

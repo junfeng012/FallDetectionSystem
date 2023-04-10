@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>View Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="dashBody">
+    <header id="dashHeader">
+        <a href="Home">
+            <img id="dashMenu" src="https://cdn.discordapp.com/attachments/911545876860764180/1071884025288998912/icons8-hamburger-menu-96.png"></img>
+        </a>
+        <p id="dashHome_Text">Home</p>
+    </header>
+
+    <div class="dashRectangle">
+        <div class="dashInline">
+            <div class="sensor">
+                <img id="sensor_Image" src="https://cdn.discordapp.com/attachments/911545876860764180/1071887711088160870/NicePng_tracking-icon-png_3819831.png"></img>
+                <h1 id="sensor_Text">Accelerometer <br>Sensor</h1>
+                <p id="sensorStatus_Text"> Status: Offline</p>
+                <img id="sensorStatus_Image" src=""></img>
+            </div>
+        </div>
+
+        <div class="dashInline">
+            <div class="linkedUser">
+                <h1 id="user_Text">Linked User</h1>
+                <img id="user_Image" src="https://media.discordapp.net/attachments/909647629632299042/1069514203485962260/1564535_customer_user_userphoto_account_person_icon.png?width=454&height=454"></img>
+                <p id="userName_Text"> <%= userName %></p>
+                <p id="userPhone_Text"> <%= userPhone %></p>
+                <form method="post">
+                    <button id="requestFallStatus_Button" type="submit">Request <br>Fall Status</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="dashInline">
+            <div class="accelerometer">
+                <h1 id="dashboard_Text">Accelerometer Graph Data</h1>
+                <div>
+                    <canvas id="myChart"></canvas>
+                </div>
+                
+                <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+                <script src="/socket.io/socket.io.js"></script>
+                
+                <script>
+                
+                var ctx = document.getElementById('myChart').getContext('2d');
+                var chart = new Chart(ctx, {
+                    type: 'line',
+                    data: {
+                        labels: [],
+                        datasets: [{
+                            label: 'SVM value',
+                            data: []
+                        }]
+                    },
+                    options: { 
+                        animation: false
+                    }
+                });
+
+                var dataArray=[]; 
+                var labelsArray=[]; 
+                var socket = io();
+                socket.on('new data', function(data) {
+                    //chart.data.labels.push(" ");
+                    labelsArray.push(" ");
+                    chart.data.labels = labelsArray.slice(-15);
+                    console.log(data[0])
+                    //chart.data.datasets[0].data.push(data);
+                    dataArray.push(data[0])
+                    chart.data.datasets[0].data = dataArray.slice(-15)
+                    chart.update();
+
+                    if(data[1])
+                    {
+                        console.log(data[1])
+                        document.getElementById("sensorStatus_Text").innerHTML = "Status: Online"
+                    }
+                    else
+                    {
+                        console.log(data[1])
+                        document.getElementById("sensorStatus_Text").innerHTML = "Status: Offline"
+                    }
+                });
+                </script>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

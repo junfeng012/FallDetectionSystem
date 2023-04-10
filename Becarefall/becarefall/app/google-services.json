@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "849624044487",
+    "firebase_url": "https://becarefall-83c57-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "becarefall-83c57",
+    "storage_bucket": "becarefall-83c57.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:849624044487:android:f822ac335eedb63d1e3fe2",
+        "android_client_info": {
+          "package_name": "com.example.becarefall"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "849624044487-76g5ti1seunas3e85mia7ugqf3dov1fs.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCZxpHfj5VcFLP7_41Rbp2B6AV9dj0DPnk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "849624044487-76g5ti1seunas3e85mia7ugqf3dov1fs.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

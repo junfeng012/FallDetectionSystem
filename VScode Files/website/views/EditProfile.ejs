@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Edit Profile</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <form method="post">
+        <header>
+            <a href="Home">
+                <img id="logo" src="https://media.discordapp.net/attachments/911545876860764180/1065562528970719242/icons8-home-page-96_1.png"></img>
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="LinkedUser">Linked User</a></li>
+                    <li><a href="DataHistory">Data History</a></li>
+                    <li><a href="UserProfile">Profile</a></li>
+                    <li><a href="Logout">Logout</a></li>
+                </ul>
+            </nav>
+        </header>
+    
+        <div class="upRectangle">
+            <div class="inline">
+                <div class="left">
+                    <img id="upUser" src="https://media.discordapp.net/attachments/909647629632299042/1069514203485962260/1564535_customer_user_userphoto_account_person_icon.png?width=454&height=454"></img>
+                    
+                </div>
+            </div>
+        
+                
+            <div class="inline">
+                <div class="right">
+                    <div class="epInformation">
+                        <p id="upPersonalInfo">Personal Information</p>
+                        <hr>
+                        <div class="epInline">
+                            <div class="epLeft">
+                                <label id="epUserInfo" for="epFirstName">Name:</label>
+                                <br>
+                                <input id="epFirstName" type="text"  name="userName" value="<%= EditProfileArray[0] %>"/>
+                                <br>
+                                <label id="epUserInfo" for="epContactNumber">Contact Number:</label>
+                                <br>
+                                <input id="epContactNumber" type="text" name="contactNumber" value="<%= EditProfileArray[1] %>"/>
+                            </div>
+                        </div>
+                        
+                        <!-- 
+                        <div class="epInline">
+                            <div class="epRight">
+                                <label id="epUserInfo" for="epLastName">Last Name:</label>
+                                <br>
+                                <input id="epLastName" type="text" placeholder="M.G."/>
+                            </div>
+                        </div> 
+                       -->
+
+                        <div>
+                            <label id="epUserInfo" for="epEmail">Email:</label>
+                            <br>
+                            <input id="epEmail" type="text" name="email" value="<%= EditProfileArray[2] %>"/>
+                        </div>
+                    </div>
+                    <div class="epPassword">
+                        <p id="upPersonalInfo">Change Password</p>
+                        <hr>
+                        <div class="epInline2">
+                            <div class="epLeft2">
+                                <label id="epUserInfo" for="epNewPassword" >New Password:</label>
+                                <br>
+                                <input id="epNewPassword" type="password" name="newPassword"/>
+                            </div>
+                        </div>
+                        <div class="epInline2">
+                            <div class="epRight2">
+                                <label id="epUserInfo" for="epConfirmNewPassword">Confirm Password:</label>
+                                <br>
+                                <input id="epConfirmNewPassword" type="password" name="confirmNewPassword"/>
+                            </div>
+                        </div>
+                        <div>
+                            <button id="epPasswordButton" type="submit">Save</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Linked User</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <a href="Home">
+            <img id="logo" src="https://media.discordapp.net/attachments/911545876860764180/1065562528970719242/icons8-home-page-96_1.png"></img>
+        </a>
+        <nav>
+            <ul>
+                <li><a href="LinkedUser">Linked User</a></li>
+                <li><a href="DataHistory">Data History</a></li>
+                <li><a href="UserProfile">Profile</a></li>
+                <li><a href="Logout">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <h2>Below displays the user currently linked with your account.</h2>
+    
+    <div class="rectangle">
+        <div class="inline">
+            <div class="luLeft">
+                <img id="user" src="https://media.discordapp.net/attachments/909647629632299042/1069514203485962260/1564535_customer_user_userphoto_account_person_icon.png?width=454&height=454"></img>
+                <p id="contactNumber"><%= UserProfileArray[2] %></p>
+            </div>
+        </div>
+
+        <div class="inline">
+            <div class="luLight">
+                <h1 id="name"><%= UserProfileArray[1] %></h1>
+                <p id="userInfo"><%= UserProfileArray[4] %></p>
+            </div>
+        </div>
+       
+    </div>
+</body>
+
+</html>
